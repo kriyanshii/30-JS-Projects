@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+html {
+    font-size: 20px;
+    background-size: cover;
+    background: black;
+  }
+
+body,html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.keys{
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.key{
+    height: 40px;
+    width: 40px;
+    border: 2px solid black;
+    padding: 30px;
+    margin: 20px;
+    color: white;
+    transition: all 0.07s;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/* to use hover */
+/*.key:hover{
+    background: rgba(255,255,255,0.1);
+    border-color: whitesmoke;
+    border-radius: 80px;
+}*/
+
+.playing{
+    background: rgba(255,255,255,0.1);
+    border-color: #ffc600;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+.sound{
+    color: yellow;
+    font-size: 10px;
+}
+
+@media only screen and (max-width:979px){
+    .keys{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

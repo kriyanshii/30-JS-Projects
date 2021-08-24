@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>JS + CSS Clock</title>
+    </head>
+    <body>
+        <div class="dates">
+            <div class="" id="date"></div>/
+            <div class="" id="month"></div>/
+            <div class="" id="year"></div>
+        </div>
+        <div class="clock">
+            <div id="hrs" ></div>:
+            <div id="mins"></div>:
+            <div id="seconds"></div>
+        </div>
+
+        <script>
+            function setDate(){
+                const now = new Date();
+                // console.log('1');
+                const second = now.getSeconds();
+                // console.log(second);
+                const secondClock = document.getElementById('seconds');
+                secondClock.innerHTML = second;
+
+                const minute = now.getMinutes();
+                // console.log(minute);
+                const minuteClock = document.getElementById('mins');
+                minuteClock.innerHTML = minute;
+
+                const hour = now.getHours();
+                // console.log(hour);
+                const hourClock = document.getElementById('hrs');
+                hourClock.innerHTML = hour;
+
+                const date = now.getDate();
+                const dateClock = document.getElementById('date');
+                dateClock.innerHTML = date;
+
+                const month = now.getMonth();
+                const monthClock = document.getElementById('month');
+                monthClock.innerHTML = month;
+
+                const year = now.getFullYear();
+                const yearClock = document.getElementById('year');
+                yearClock.innerHTML = year;
+
+            }
+            setInterval(setDate,1000);
+        </script>
+    </body>
+</html>
