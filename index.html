@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <title>My All JavaScript Projects</title>
+    </head>
+    <body>
+        <h1 class="neonText">My JavaScript Projects</h1>
+        <ul>
+            <div class="d-flex justify-content-around">
+                <li><a href="DrumStick/index.html">
+                <div class="card mb-2 col-3" style="width: 18rem;">
+                    <img src="Drumstick.png" class="card-img-top" alt="picture of drumstick project">
+                    <div class="card-body">
+                        <p class="card-text">This is the Drumstick project I have created using HTML-CSS-Javascript From Tutorial. In this project I have learnt how to use keyboard keys to play.</p>
+                    </div>
+                </div>
+                </a></li>
+            <li><a href="Day2/index.html">
+                <div class="card mb-2 col-3" style="width: 18rem;">
+                    <img src="clock.png" class="card-img-top" alt="picture of clock project">
+                    <div class="card-body">
+                        <p class="card-text">This is the clock project I have created using HTML-CSS-Javascript From Tutorial. In this mini-porject I have learnet about Date object. And how to use it.</p>
+                    </div>
+                </div>
+            </a></li>
+            <li><a href="clock/index.html">
+                <div class="card mb-2 col-3" style="width: 18rem;">
+                    <img src="table-clock.png" class="card-img-top" alt="picture of table clock project">
+                    <div class="card-body">
+                        <p class="card-text">This is the Table clock I have created using HTML-CSS-Javascript. In this project I gained more information regarding innerHTML and Date object.</p>
+                    </div>
+                </div>
+            </a></li>
+        </div>
+        <div class="d-flex justify-content-around">
+            <li><a href="CSS-variables/index.html">
+                <div class="card mb-2" style="width: 18rem;">
+                    <img src="CSS-variables.png" class="card-img-top" alt="picture of CSS-variables project">
+                    <div class="card-body">
+                        <p class="card-text">This is the CSS-variables project I have created using HTML-CSS-Javascript From Tutorial. In this project I have learned to update CSS-variables using JS.</p>
+                    </div>
+                </div>
+            </a></li>
+            <li><a href="Array-cardio/index.html">
+                <div class="card" style="width: 18rem;">
+                    <img src="Ararys-cardio.png" class="card-img-top" alt="picture of array-cardio project">
+                    <div class="card-body">
+                        <p class="card-text">This is the array-cardio project I have created using HTML-CSS-Javascript From Tutorial. I have added Dark and light theme in this project.</p>
+                    </div>
+                </div>
+            </a></li>
+        </div>
+        </ul>
+
+        <footer style="color: white;">Made with ❤️ by <a href="kriyanshishah.github.io" class="">Kriyanshi Shah</a></footer>
+
+        <style>
+            body{
+                text-align: center;
+                background-color: black;
+            }
+
+            h1{
+                padding: 50px;
+                animation: flicker 1.5s infinite alternate;  
+            }
+
+            .card{
+                background-color: black;
+                color: white;
+                margin: 10px;
+            }
+
+            .card:hover{
+                transform: scale(1.1);
+                border: 3px solid white;
+                z-index: 1;
+            }
+
+            .neonText {
+                color: #fff;
+                text-shadow:
+                    0 0 7px #fff,
+                    0 0 10px #fff,
+                    0 0 21px #fff,
+                    0 0 42px #0fa,
+                    0 0 82px #0fa,
+                    0 0 92px #0fa,
+                    0 0 102px #0fa,
+                    0 0 151px #0fa;
+            }
+
+            @keyframes flicker {
+            0%, 18%, 22%, 25%, 53%, 57%, 100% {
+            text-shadow:
+                0 0 4px #fff,
+                0 0 11px #fff,
+                0 0 19px #fff,
+                0 0 40px #0fa,
+                0 0 80px #0fa,
+                0 0 90px #0fa,
+                0 0 100px #0fa,
+                0 0 150px #0fa;
+            }
+            20%, 24%, 55% {       
+                text-shadow: none;
+        }
+        }
+
+            a:link {
+                text-decoration: none;
+            }
+
+            a:visited {
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: none;
+            }
+
+            a:active {
+                text-decoration: underline;
+            }
+
+            ul{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        </style>
+    </body>
+</html>
