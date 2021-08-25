@@ -10,7 +10,7 @@
     <body>
         <h1 class="neonText">My JavaScript Projects</h1>
         <ul>
-            <div class="d-flex justify-content-around">
+            <div class="row d-flex flex-sm-column justify-content-around justify-content-sm-center">
                 <li><a href="DrumStick/index.html">
                 <div class="card mb-2 col-3" style="width: 18rem;">
                     <img src="Drumstick.png" class="card-img-top" alt="picture of drumstick project">
@@ -36,7 +36,7 @@
                 </div>
             </a></li>
         </div>
-        <div class="d-flex justify-content-around">
+        <div class="row d-flex justify-content-around">
             <li><a href="CSS-variables/index.html">
                 <div class="card mb-2" style="width: 18rem;">
                     <img src="CSS-variables.png" class="card-img-top" alt="picture of CSS-variables project">
@@ -133,6 +133,13 @@
                 flex-direction: column;
                 justify-content: space-between;
             }
+            
+            @media only screen and (max-width: 600px) {
+                .card {
+                    margin: 30px auto;
+                }
+            }
+
         </style>
     </body>
 </html>
